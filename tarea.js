@@ -85,12 +85,20 @@ class Producto {
   }
 }
 
-// Prueba class carrito:
+// Inicializando carrito vacio.:
 
 let carrito2 = new Carrito();
-console.log(carrito2);
+
+// Agregando "Productos" al carrito vacio
 
 carrito2.agregarProducto("Azucar", 5, 2);
-carrito2.agregarProducto("Azucar", 10, 3);
 carrito2.agregarProducto("Leche", 10, 1);
+
+// validando "Productos Duplicados" en carrito.
+
+carrito2.agregarProducto("Azucar", 10, 3);
 carrito2.agregarProducto("Leche", 10, 5);
+
+// Probando datos:
+
+console.log(carrito2);
